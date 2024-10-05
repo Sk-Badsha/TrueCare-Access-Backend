@@ -7,7 +7,6 @@ import { Appointment } from "../models/appointment_schema.js";
 import { convertDateTimeToISOString } from "../utils/ConvertDateTime.js";
 import { sendEmail } from "../utils/SendEmail.js";
 import registrationSuccessEmail from "../utils/SendEmail/RegistrationSuccessEmail.js";
-import PrankEmail from "../utils/SendEmail/PrankEmail.js";
 import ResetPasswordEmail from "../utils/SendEmail/ResetPasswordEmail.js";
 import jwt from "jsonwebtoken";
 
