@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { sendEmail } from "../utils/SendEmail.js";
-import JobOpeningEmail from "../utils/SendEmail/JobOpeningEmail.js";
+import JobOpeningEmail from "../utils/SendEmailTemplates/JobOpeningEmail.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiError } from "../utils/ApiError.js";
 import { logging_v2 } from "googleapis";

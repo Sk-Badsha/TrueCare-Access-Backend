@@ -6,8 +6,8 @@ import { Doctor } from "../models/doctor_schema.js";
 import { Appointment } from "../models/appointment_schema.js";
 import { convertDateTimeToISOString } from "../utils/ConvertDateTime.js";
 import { sendEmail } from "../utils/SendEmail.js";
-import RegistrationSuccessEmail from "../utils/SendEmail/RegistrationSuccessEmail.js";
-import ResetPasswordEmail from "../utils/SendEmail/ResetPasswordEmail.js";
+import RegistrationSuccessEmail from "../utils/SendEmailTemplates/RegistrationSuccessEmail.js";
+import ResetPasswordEmail from "../utils/SendEmailTemplates/ResetPasswordEmail.js";
 import jwt from "jsonwebtoken";
 
 const generateAccessAndRefreshToken = async (userId) => {
