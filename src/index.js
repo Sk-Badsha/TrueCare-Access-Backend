@@ -3,7 +3,7 @@ import connectDB from "./db/dbconnect_promise.js";
 import { app } from "./app.js";
 import colors from "colors";
 dotenv.config({
-  path: "./env",
+  path: "./.env",
 });
 
 connectDB()
