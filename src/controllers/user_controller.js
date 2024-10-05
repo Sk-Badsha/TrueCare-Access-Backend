@@ -6,7 +6,7 @@ import { Doctor } from "../models/doctor_schema.js";
 import { Appointment } from "../models/appointment_schema.js";
 import { convertDateTimeToISOString } from "../utils/ConvertDateTime.js";
 import { sendEmail } from "../utils/SendEmail.js";
-import registrationSuccessEmail from "../utils/SendEmail/RegistrationSuccessEmail.js";
+import RegistrationSuccessEmail from "../utils/SendEmail/RegistrationSuccessEmail.js";
 import ResetPasswordEmail from "../utils/SendEmail/ResetPasswordEmail.js";
 import jwt from "jsonwebtoken";
 
@@ -59,7 +59,7 @@ const registerUser = asyncHandler(async (req, res) => {
   await sendEmail(
     createdUser.email,
     "Thank you for Registering with US 📧 TrueCare Access",
-    registrationSuccessEmail(createdUser.name)
+    RegistrationSuccessEmail(createdUser.name)
   );
   return res
     .status(201)

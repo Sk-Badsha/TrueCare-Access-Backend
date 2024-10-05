@@ -1,4 +1,4 @@
-function registrationSuccessEmail(userName) {
+function RegistrationSuccessEmail(userName) {
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -35,4 +35,4 @@ function registrationSuccessEmail(userName) {
     `;
 }
 
-export default registrationSuccessEmail;
+export default RegistrationSuccessEmail;
